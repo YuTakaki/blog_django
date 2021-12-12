@@ -1,0 +1,19 @@
+{% extends 'app.html' %}
+
+{% block content %}
+  <div class='details'>
+    {% if user == article.author %}
+      <div class="options">
+        <form action="{% url 'articles:delete' id=article.id%}" method="POST">
+          {% csrf_token %}
+          <input type='submit' value='delete' />
+        </form>
+        <a class="edit" href="{% url 'articles:create' %}?id={{article.id}}&body={{article.body}}&title={{article.title}}">Edit</a>
+      </div>
+    {% endif %}
+    <h1>{{article.title}}<h1>
+    <p>{{article.body}}</p>
+  <div>
+
+{% endblock content %}
+

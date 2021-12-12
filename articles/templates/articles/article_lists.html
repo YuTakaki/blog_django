@@ -1,0 +1,16 @@
+{% extends 'app.html' %}
+
+{% block content %}
+    {% for article in articles %}
+        <a href="{% url 'articles:details' id=article.id %}">
+            <div class='articleContainer'>
+                <h2>{{article.title}}</h2>
+                <p>{{article.bodySnippet}}</p>
+            </div>
+        </a>
+    {% endfor %}
+
+{% endblock content %}
+
+
+

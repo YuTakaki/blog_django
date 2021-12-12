@@ -1,0 +1,14 @@
+{% extends 'app.html' %}
+
+{% block content %}
+  
+  <form class="signin" action="{% url 'accounts:sign-in' %}" method="POST">
+    <h1>Sign In</h1>
+    {% csrf_token %}
+    {{form}}
+    {% if request.GET.next %}
+      <input type="hidden" value ="{{request.GET.next}}" name="next"/>
+    {% endif %}
+    <input type="submit" value="sign in" />
+  <form>
+{% endblock content %}

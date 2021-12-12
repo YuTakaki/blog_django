@@ -1,0 +1,13 @@
+{% extends 'app.html' %}
+
+{% block content %}
+  <form class="addBlog" action="{% url 'articles:create' %}" method="POST">
+    {% csrf_token %}
+    {{form}}
+    {% if "id" in request.GET%}
+      <input type='hidden' value="{{request.GET.id}}" name="id"/>
+    
+    {% endif %}
+    <input type="submit" value="post" />
+  <form>
+{% endblock content %}

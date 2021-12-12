@@ -1,0 +1,147 @@
+.App {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(13, 155, 221);
+}
+
+nav {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin-left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.articleContainer h2 {
+    color: rgb(13, 155, 221);
+}
+
+.articleContainer p {
+    color: black;
+}
+
+.articleContainer {
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgb(13, 155, 221);
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details p {
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+}
+
+.details h1 {
+    font-size: 4rem;
+    color: rgb(13, 155, 221);
+}
+
+.details .options {
+    display: flex;
+}
+
+.details form input {
+    background-color: rgb(13, 155, 221);
+    padding: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.details .edit {
+    background-color: rgb(13, 155, 221);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.signin,
+.signup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.signin input,
+.signup input {
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.signup input {
+    margin-bottom: 0px;
+}
+
+.signup .helptext {
+    display: none;
+}
+
+.addBlog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.addBlog textarea,
+.addBlog input {
+    border-radius: 12px;
+    margin: 10px 0;
+    padding: 10px;
+    resize: none;
+}
